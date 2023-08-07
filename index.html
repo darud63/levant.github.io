@@ -139,7 +139,7 @@ function onEachFeature(feature, layer, latlng) {
 	if (feature.properties.english && !feature.properties.war_name) { 
 		var header = header + "<span class=\"subhead\">" + feature.properties.english;
 			if (feature.properties.synonym) { 
-				var header = header + "</span><span class=\"vtrans\">Координати: " + feature.properties.synonym + "</span>"; 
+				var header = header + "</span><span class=\"vtrans\">Номер будинку: " + feature.properties.synonym + "</span>"; 
 			} else { 
 				var header = header + "</span>";
 			}
