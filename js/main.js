@@ -1,1 +1,1 @@
-var grrmmap={}
+var grrmmap={1}
