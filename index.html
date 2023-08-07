@@ -86,12 +86,12 @@ var map = L.map('map', {
   noWrap: true,
 //  autoPan : false,
   autoPan : true
- }).setView([-514,514], 1);
+ }).setView([-257,509], 1);
 
 
 var hash = new L.Hash(map);
-var southWest = map.unproject([0, 3900], map.getMaxZoom());
-var northEast = map.unproject([8000, 0], map.getMaxZoom());
+var southWest = map.unproject([0, 1080], map.getMaxZoom());
+var northEast = map.unproject([2100, 0], map.getMaxZoom());
 var bounds = new L.LatLngBounds(southWest, northEast);
 map.setMaxBounds(bounds);
 map.on('drag', function() {
